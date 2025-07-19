@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/jdrk/Git/StorageTiering/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

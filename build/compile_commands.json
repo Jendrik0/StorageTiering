@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/jdrk/Git/StorageTiering/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/jdrk/Git/StorageTiering/include -g -O0 -std=gnu++17 -o CMakeFiles/storage_tiering.dir/main.cpp.o -c /home/jdrk/Git/StorageTiering/main.cpp",
+  "file": "/home/jdrk/Git/StorageTiering/main.cpp",
+  "output": "CMakeFiles/storage_tiering.dir/main.cpp.o"
+}
+]

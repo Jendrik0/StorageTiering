@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Wl,--dependency-file=CMakeFiles/storage_tiering.dir/link.d CMakeFiles/storage_tiering.dir/main.cpp.o -o storage_tiering  /usr/lib/libsqlite3.so /usr/lib/libspdlog.so.1.15.3 /usr/lib/libfmt.so.11.2.0
