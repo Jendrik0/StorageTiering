@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(storage_tiering)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+add_executable(storage_tiering
+    main.cpp
+    src/file_heat_calculator.cpp
+    src/db_manager.cpp
+    src/file_mover.cpp
+)
+
+find_package(SQLite3 REQUIRED)
+target_link_libraries(storage_tiering SQLite::SQLite3)

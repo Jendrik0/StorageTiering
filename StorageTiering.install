@@ -1,0 +1,18 @@
+post_install() {
+  # Create a dedicated user/group
+  if ! getent group 'your-app' >/dev/null; then
+    groupadd -r 'your-app'
+  fi
+  if ! getent passwd 'your-app' >/dev/null; then
+    useradd -r -g 'your-app' -d '/var/lib/your-app' -s /usr/bin/nologin 'your-app'
+  fi
+
+  # Set ownership/permissions
+  chown -R your-app:your-app /var/lib/your-app
+  chmod 770 /var/lib/your-app  # Restrict access
+}
+
+post_upgrade() {
+  post_install  # Reapply on upgrade
+}
+
